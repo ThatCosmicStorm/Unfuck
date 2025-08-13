@@ -7,7 +7,7 @@ f = Unfuck()
 
 f.add(12)
 
-while f.cell:
+while f.array[f.dp]:
     f.right()
     f.add(6)
 
