@@ -42,3 +42,14 @@ class Unfuck:
 
     # There are no functions for loops.
     # Loops are handled separately through using "while self.cell:"
+
+    def goto(self, index: int = 0):
+        self.dp = index
+        self.cell = self.array[self.dp]
+
+    def debug(self):
+        for i in enumerate(self.array):
+            if i != self.dp:
+                print(f"[{i}: {self.array[i]}]")
+            else:
+                print(f">>> [{i}:{self.array[i]}]")
